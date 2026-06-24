@@ -540,10 +540,10 @@ body.editing .aitem input[type=checkbox] { display: none; }
         <div class="sec-head"><span class="sec-icon">✦</span><span class="sec-title">What matters most right now</span><span class="sec-line"></span></div>
         <div class="top4">
           <div class="top4-head">Your top priorities</div>
-          <div class="top4-item"><div class="top4-num">1</div><div><div class="top4-text">Finalize homepage — all June 3 design decisions applied including scroll-reveal cards, testimonials, parallax section, and corrected pricing ($57 / $175)</div><div class="top4-owner">Mine — you: provide quote for parallax section</div></div></div>
-          <div class="top4-item"><div class="top4-num">2</div><div><div class="top4-text">Build and deliver your Hypnotherapy landing page — shareable with prospective clients while the rest of the site is built</div><div class="top4-owner">Mine</div></div></div>
-          <div class="top4-item"><div class="top4-num">3</div><div><div class="top4-text">Upload your photos to Wix, provide 6–7 written testimonials (initials fine), and finalize the mid-page quote wording</div><div class="top4-owner">Yours</div></div></div>
-          <div class="top4-item"><div class="top4-num">4</div><div><div class="top4-text">Set up your new GitHub account (separate from your CS account) and begin exploring Claude + GitHub Pages for VIP client portals</div><div class="top4-owner">Yours — I'll send you the video tutorial</div></div></div>
+          <div class="top4-item"><div class="top4-num">1</div><div><div class="top4-text">Provide 3-session and 5-session hypnotherapy package pricing so the Clinical page can be completed</div><div class="top4-owner">Yours — urgent</div></div></div>
+          <div class="top4-item"><div class="top4-num">2</div><div><div class="top4-text">Transfer domain to the new Wix site and upgrade to 3-year Business plan — the 50% discount deadline is July 1</div><div class="top4-owner">Yours — deadline July 1</div></div></div>
+          <div class="top4-item"><div class="top4-num">3</div><div><div class="top4-text">Complete Wix Payments setup (business info, bank details) and send your terms and conditions document to Aurailia</div><div class="top4-owner">Yours</div></div></div>
+          <div class="top4-item"><div class="top4-num">4</div><div><div class="top4-text">Provide 2 more testimonials to reach 6 total — confirm whether to use initials or a placeholder image for clients without photo consent</div><div class="top4-owner">Yours</div></div></div>
         </div>
       </div>
 
@@ -913,8 +913,8 @@ body.editing .aitem input[type=checkbox] { display: none; }
         <div class="sec-head"><span class="sec-icon">✦</span><span class="sec-title">Latest update</span><span class="sec-line"></span></div>
         <div class="card">
           <div class="note-entry">
-            <div class="note-date">✦ June 3, 2026</div>
-            <div class="note-text">We had a really productive session today. We went deep into the homepage design and landed on all the details that will make it feel like you.<br><br>Here is what is now locked. The cards are going to glide in as you scroll. The testimonials are moving to a scrollable format — about six in a row, with initials for any clients who would rather not show their face. There will be a short nature video mid-page with one of your own quotes overlaid in white text. The star particle animation stays as the section divider.<br><br>The two-path structure and pricing are confirmed. Path 1 is the standard consultation at $57. Path 2 is the Clarity Map at $175 — includes a private consultation at no extra cost and a $100 credit toward any package booked within 48 hours. The Path 2 label is Read First. The secondary link pointing toward the work section will be a small text link or arrow, not a full button.<br><br>QJH stays inside the Hypnotherapy page, not a separate nav item. The Hypnotherapy landing page is next after the homepage — you will be able to share that link with prospective clients while the rest of the site is still being built.<br><br>I also introduced you to the client portal format I build using Claude and GitHub Pages. You are holding one right now. I sent you your own version after our call, and I will send a short video showing you how to set one up for your own VIP clients. Set up a separate GitHub account for client work to keep it clean from your computer science account.<br><br>What I need from you now: upload your photos to the Wix media library, pull together six or seven written testimonials, and send me the exact wording for the quote you want on the mid-page video.</div>
+            <div class="note-date">❖ June 17, 2026</div>
+            <div class="note-text">Good session today. We reviewed the live site, worked through several design decisions, and locked some important pricing and structural things that had been sitting open.<br><br>Pricing is now standardised. All single hypnotherapy sessions — clinical and QJH — are $207. The consultation stays at $57. Rather than listing a lower price for QJH to encourage early bookings, we will use discount coupons for that. It keeps the perceived value of both services equal and gives you flexibility.<br><br>The Clarity Map flow is confirmed. When someone purchases, they get a confirmation email with a link to the GoHighLevel intake form. Once they complete it, you deliver the Clarity Map, then send the booking link for the follow-up call separately. No pressure to book immediately — they receive the report first and book when ready.<br><br>All new products go through Wix Payments. Your existing consultation booking through Stripe stays for now and migrates after launch. Wix has a native QuickBooks connector so your bookkeeping runs automatically. One important deadline — there is a 50% discount on Wix plans that closes July 1. Transfer the domain to the new site first, then upgrade to the 3-year Business plan to lock it in.<br><br>The Clinical Hypnotherapy page structure is confirmed: three package options (single session, package of 3, package of 5), consultation CTA, Google Reviews link, screenshot testimonials, and FAQ. I need the package pricing from you before I can finish that page.<br><br>For the QJH page, you confirmed the visual direction: spiritual and cosmic, a doorway that feels calming and soul-opening. Not mystical or dark. I will put together two or three visual samples for you to look at before I start building.<br><br>FAQ sections are moving off the homepage entirely. They will live on the individual service pages where visitors are already exploring a specific offering. The homepage stays clean.<br><br>What I need from you now: the 3-session and 5-session package pricing, two more testimonials to reach six on the homepage, your terms and conditions document, and confirmation on whether to use initials or a placeholder image for clients without photo consent.</div>
           </div>
         </div>
 
@@ -946,18 +946,20 @@ var CLIENT_KEY = 'aurailia_portal_mona';
    section = group heading, badge = optional pill (or ''), items = array of strings */
 var DEFAULT_TODO = {
   mine: [
-    { section: 'Send Aurailia now', badge: 'URGENT', items: [
-      'Upload a folder of preferred photos to the Wix media library',
-      'Provide 6–7 written testimonials for the homepage (initials or photos fine for each)',
-      'Finalize the wording for your mid-page quote (to be overlaid on the parallax video)',
-      'Set up a new GitHub account (separate from your CS account) for client portal hosting'
+    { section: 'Do this week', badge: 'URGENT', items: [
+      'Provide 3-session and 5-session hypnotherapy package pricing so the Clinical Hypnotherapy page can be completed',
+      'Transfer domain to the new Wix site, then upgrade to 3-year Business plan before July 1 discount deadline',
+      'Complete Wix Payments setup — business info, bank account, submit for approval',
+      'Update tax setting in Wix checkout to "tax included in price"',
+      'Send terms and conditions document to Aurailia for upload to Wix',
+      'Provide 2 additional testimonials to reach 6 total on the homepage',
+      'Confirm consistent placeholder approach for testimonials without photo consent — initials or image?'
     ]},
-    { section: 'Review and confirm', badge: '', items: [
-      'Notify Aurailia via Voxer before making any edits directly in Wix',
-      'Provide updated Emotional Freedom Reset program details (description, structure, inclusions, pricing)',
-      'Provide package pricing document: Clinical Hypnotherapy, QJH, Holistic Healing — focus areas, inclusions, pricing, VIP add-ons',
-      'Create a testimonials folder in the shared drive with all formats (screenshots, survey responses, event feedback, videos)',
-      'Explore building client portals using Claude AI and GitHub Pages for your own VIP clients'
+    { section: 'Also needed', badge: '', items: [
+      'Review QJH cosmic doorway visual samples from Aurailia and confirm direction before page is built',
+      'Send voice notes and content details for the service pages',
+      'Send details about the Women\'s Safe Space membership initiative to Aurailia',
+      'Notify Aurailia via Voxer before making any edits directly in Wix'
     ]},
     { section: 'When ready', badge: '', items: [
       'Record The Reset Protocol audio — 20–25 min, clinically informed, science-grounded, no spiritual language',
@@ -967,25 +969,24 @@ var DEFAULT_TODO = {
     ]}
   ],
   aurailia: [
-    { section: 'This week', badge: 'IN PROGRESS', items: [
-      'Complete homepage — all June 3 decisions: scroll-reveal cards, scrollable testimonials, parallax video break, star animation, corrected pricing, "Read First" path label, secondary CTA as text link',
-      'Build Hypnotherapy landing page (next priority page) — with QJH sub-section linking to dedicated QJH page. Header/footer can be hidden for shareable standalone use.',
-      'Build and send personalized client portal to Dr. Mona (HTML/Claude/GitHub) after this call',
-      'Send Dr. Mona a short video tutorial (2–3 min) on GitHub Pages setup for client portals',
-      'Source and test suitable nature/forest/water video for mid-page parallax break. Test Canva AI animation as fallback.',
-      'Update testimonial section to scrollable card format (~6 testimonials, initials option). Invert color scheme vs. section above.',
-      'Rebuild informational cards as individual elements (not repeater) for scroll-triggered reveal animations. Reduce card size.'
+    { section: 'In progress now', badge: 'IN PROGRESS', items: [
+      'Complete Clinical Hypnotherapy page — layout, copy, 3-step process, areas of support, package pricing once received from Mona. Google Reviews link + screenshot testimonials + FAQ.',
+      'Prepare 2–3 QJH cosmic doorway visual samples for Mona to review before building the page',
+      'Homepage fixes: branded icon divider between About sections, fix numbered steps order (1 and 2 reversed), update contact button colour, refine contact form pop-up (remove border, styled close button)',
+      'Create Canva gradient as reusable banner-sized image for consistent use across new pages',
+      'Add Google Reviews link to relevant service landing pages',
+      'Incorporate screenshot testimonials into service landing pages'
     ]},
     { section: 'Next in sequence', badge: '', items: [
-      'Build QGH — Quantum Journey Hypnotherapy page: 3 focus boxes (Career/Purpose, Money Blocks, Self-Trust) + Other. Single session + package options. CTA: Clarity and Connection Call.',
+      'Build QJH — Quantum Journeys Hypnotherapy page: cosmic doorway theme (samples to Mona first). $207/session. 3 focus boxes + Other. Google Reviews + screenshots + FAQ. CTA: Clarity and Connection Call.',
+      'Set up terms and conditions page on Wix + link from checkout (once doc received from Mona)',
+      'Connect QuickBooks connector in Wix Payments settings',
+      'Configure Clarity Map pricing plan in Wix + automated confirmation email with GoHighLevel intake form link',
       'Build Holistic Healing page: 3 pricing boxes (8/12/Customised sessions), VIP add-on, MENA contact prompt',
       'Build Clarity Map sales page — $175 "Read First" path, includes private consultation + $100 credit',
       'Build Emotional Freedom Reset Wix landing page → GoHighLevel payment redirect',
-      'Develop hover-activated dropdown with animated cards for Ways to Work With Me nav menu item',
-      'Apply star/particle animation as section divider across the site',
-      'Test Wix Yoga Planner app and Wix native bookings for Nidra class calendar integration',
       'Build Events page — past highlights + dynamic upcoming events backend',
-      'Create Loom video walkthrough of full artifact creation + GitHub hosting process'
+      'Test Wix Yoga Planner app and Wix native bookings for Nidra class calendar integration'
     ]}
   ]
 };
@@ -1001,29 +1002,38 @@ var DEFAULT_PROGRESS = {
     ['Soulmate Client Mirror Sheet delivered', 'done'],
     ['Brand Kit (colour, typography, voice) delivered', 'done'],
     ['Claude AI Guide + project setup', 'done'],
-    ['Call summaries 1–4 sent', 'done'],
+    ['Call summaries 1–5 sent', 'done'],
     ['HTML artifact template + written instructions sent', 'done'],
     ['Voxer communication set up', 'done'],
     ['Wix co-owner access granted to Mona', 'done'],
     ['Logo direction confirmed (Option 3 — star/sun, moon replacing diamond)', 'done'],
     ['Client portal built and sent to Mona', 'done'],
-    ['GitHub Pages tutorial video sent to Mona', 'notstart']
+    ['GitHub Pages tutorial video sent to Mona', 'notstart'],
+    ['Wix Payments — business info + bank account connected', 'pending'],
+    ['Domain transferred + 3-year Business plan upgraded (before July 1)', 'pending'],
+    ['QuickBooks connector set up in Wix Payments', 'notstart'],
+    ['Tax setting updated to tax included in price', 'pending'],
+    ['Terms and conditions page created on Wix', 'notstart']
   ],
   brand: [
     ['Canva gradient background asset created (dark olive + gold radial ~18%)', 'done'],
     ['Logo finalized — moon element replacing diamond, Academy text legibility solved', 'done'],
     ['Button style standardized (pill/rounded, solid, gold hover shadow)', 'done'],
     ['Font sizing updated on dark backgrounds (larger, brighter white)', 'done'],
-    ['Nav menu items added to header', 'done']
+    ['Nav menu items added to header', 'done'],
+    ['Homepage — branded icon divider between About sections', 'notstart'],
+    ['Homepage — numbered steps order fix (1 and 2 reversed)', 'notstart'],
+    ['Homepage — contact button colour standardized', 'notstart'],
+    ['Contact form pop-up — border removed, close button refined', 'notstart']
   ],
   website: [
-    ['Homepage — full build with all June 3 decisions applied', 'inprog'],
+    ['Homepage — full build including all design decisions', 'inprog'],
     ['About page', 'inprog'],
-    ['Hypnotherapy main page (Clinical, with QJH sub-section)', 'inprog'],
+    ['Clinical Hypnotherapy page — structure confirmed, pricing pending', 'inprog'],
+    ['QJH page — visual samples to Mona first, then build', 'notstart'],
     ['Hypnotherapy standalone shareable landing page', 'notstart'],
-    ['QJH — Quantum Journey Hypnotherapy page', 'notstart'],
     ['Holistic Healing page (3 pricing boxes + MENA note)', 'notstart'],
-    ['Clarity Map sales page ($175 "Read First")', 'notstart'],
+    ['Clarity Map sales page ($175 — purchase flow confirmed)', 'notstart'],
     ['Emotional Freedom Reset landing page → GoHighLevel', 'notstart'],
     ['Mindfulness and Nervous System page (placeholder + calendar TBD)', 'notstart'],
     ['Consultation booking page ($57 + intake 48hr + credit email)', 'notstart'],
@@ -1032,7 +1042,9 @@ var DEFAULT_PROGRESS = {
     ['Resources page (Facebook + GHL links)', 'notstart'],
     ['Academy landing page', 'notstart'],
     ['Confidence Rewired — standalone, no main nav', 'notstart'],
-    ['Privacy policy, Terms, 404', 'notstart']
+    ['Privacy policy, Terms, 404', 'notstart'],
+    ['Google Reviews link added to service landing pages', 'notstart'],
+    ['Screenshot testimonials added to service landing pages', 'notstart']
   ]
 };
 /* ═══════════ NOTHING BELOW NEEDS EDITING PER CLIENT ═══════════ */
@@ -1303,84 +1315,84 @@ var CARD_BACKS = ['images/card-back-1.png', 'images/card-back-2.png', 'images/ca
 
 var ORACLE_DECK = [
   { name: 'The Witness', essence: 'You are allowed to be seen', glyph: '👁', image: 'images/01-witness.png',
-    why: 'You drew this because you have been amplifying everyone else’s fear of being seen so long you have mistaken it for your own. As a Reflector you absorb the field around you. The bracing you feel is often not yours — it is what the room has been holding, and you have been carrying it. The card came to return it and let you be visible as yourself.',
-    message: 'Your 2/4 profile means your most powerful communication is not manufactured content. It is what comes through you in response to real moments. When you share honestly from where you actually are, the right people do not just hear you. They recognise you. Your Cross of Contagion means the right person landing in your field already feels something shift. Let them find you.',
+    why: 'You drew this because the fear of being seen has been louder lately. Not because you are afraid of attention — but because you feel everything in a room so completely that being seen means being exposed to it all coming back. The bracing you feel before you put something out is real. The card came to remind you it does not have to stop you.',
+    message: 'You are not performing for an audience. You are creating a field where the right person recognises herself. Your most powerful communication has never been the polished version. It is the honest one — the moment you say something true and someone reads it and thinks you were speaking directly to her. That recognition is the work. Let yourself be seen doing it.',
     practice: 'Share one real, unpolished moment from where you actually are today. Not curated. Not explained. Just true.' },
   { name: 'The Slow Yes', essence: 'Your timing is not late', glyph: '🌙', image: 'images/02-slow-yes.png',
-    why: 'You pulled this because you have been making decisions on someone else’s clock and your body has been quietly rejecting them. Your authority is lunar. You are designed to need the full 28-day cycle before a big yes lands in your bones. The urgency you feel is not a signal to move faster. It is a signal that something has not yet had time to become clear.',
-    message: 'The pressure to decide now is almost never true urgency. It is borrowed anxiety from a world built for types who move faster than you are designed to. A decision made before the lunar fullness arrives will cost you more than the wait. Let the cycle complete. The yes that comes after is the one that holds.',
-    practice: 'Identify one decision you have been forcing. Give it until the end of the lunar cycle before you act. Notice what shifts.' },
+    why: 'You pulled this because you have been making decisions from pressure rather than clarity, and part of you knows the difference. You are not someone who decides well under urgency. Your best decisions arrive slowly, through conversation, through sitting with something long enough that your body finally knows. The card came to give you permission to take that time.',
+    message: 'The right yes for you does not feel rushed. It feels settled. When you make a decision before that settledness arrives, you will feel it as friction — a quiet wrongness underneath the logic. That friction is information, not weakness. Let the thing sit. Talk it through with someone you trust. The clarity will come, and when it does it will be clean. That clean yes is worth waiting for.',
+    practice: 'Identify one decision you have been forcing. Give it more time. Notice what your body says when you stop pushing.' },
   { name: 'The Vessel', essence: 'You hold more than you show', glyph: '🏺', image: 'images/03-vessel.png',
-    why: 'This found you because someone has made you feel like you are too many things. All nine of your centres are open. You are not scattered. You are designed to hold the full spectrum of human experience. That is not a flaw. It is the design.',
-    message: 'NLP, hypnotherapy, somatic work, Yoga Nidra, trauma therapy, and a PhD in AI. These are not separate offerings from a practitioner who cannot decide what she does. They are one vessel that meets a client at every level simultaneously. No defined practitioner can do what you do because no defined practitioner holds the range you hold. Stop narrowing yourself into something more legible. You were built for depth, not simplicity.',
-    practice: 'Write down the one thing that connects every modality and method you use. That thread is your real offer.' },
+    why: 'This found you because someone has made you feel like you are too many things, or you have started to wonder if you should narrow down. The card came to settle that question.',
+    message: 'The range of what you hold — the clinical depth, the somatic understanding, the subconscious work, the contemplative practices, the academic precision — is not a liability. It is the reason you can reach a client at every level simultaneously. That is rare. The practitioner who keeps trying to cut parts of herself away to look more focused is the one who loses her edge. Integration is your path, not subtraction.',
+    practice: 'Write down the one thing that quietly connects everything you do. That thread is your real offer.' },
   { name: 'The Worth', essence: 'Say the number', glyph: '💎', image: 'images/04-worth.png',
-    why: 'You drew this because Gate 14 lives in your Cross. Gate 14 is the gate of Power Skills — the energy of having a gift and knowing how to direct its value. When you undercharge or hesitate on your price, you are blocking the very gate that is meant to move resources through you. The card came to unlock it.',
-    message: 'Your sessions do not deliver information. They deliver change at the level where nothing else has reached. A client who has spent years in therapy and coaching and still cannot shift the pattern is not paying for your time. She is paying for the thing that finally worked. The depth of your container, the range of your training, the 28 days of care you bring — these are not common. Price them accordingly.',
+    why: 'You drew this because there is a price or an ask sitting in your throat right now, and something keeps softening it before it reaches the other person. The card came to help you say it clearly.',
+    message: 'You were built to move resources as well as people. The tightness you feel around charging what you are worth is not humility — it is an old story about what you are allowed to receive. Your sessions do not deliver information. They deliver change at the level where nothing else has reached. That is not an hourly rate. That is a transformation. Let your price reflect what you actually offer.',
     practice: 'Say your full price out loud, without softening or explaining it, until your voice is steady.' },
   { name: 'The Return', essence: 'Come home to yourself', glyph: '🕊', image: 'images/05-return.png',
-    why: 'This came through because you have been running strategy designed for Generators and Manifestors and wondering why it exhausts you. You are a Reflector. You are not built to initiate or push. The friction you have been feeling is not failure. It is misalignment. The card is calling you back to your actual design.',
-    message: 'Your 2/4 profile means your natural movement is between deep solitude where you integrate and recover, and genuine connection with your community where your gifts come alive in response. The business that fits you is built on invitation, referral, and depth. Not volume, not hustle, not a content machine. When you build from your own frequency everything gets lighter.',
+    why: 'This came through because you have been building from strategies that were not designed for someone like you, and a quiet part of you feels the friction. You are not built to push, to initiate, to run the same pace as practitioners whose energy works differently. The card is calling you back to your own way of working.',
+    message: 'The business that fits you is not built on volume or hustle. It is built on depth, on genuine relationships, on the kind of slow trust that turns a person who has been watching you for months into a client who stays for a year. When you build from your own frequency instead of borrowed strategy, you stop spending energy fighting your own nature. Everything gets lighter. That lightness is not laziness. It is alignment.',
     practice: 'Identify one strategy you have been forcing that does not feel like you. Set it down this week and notice what the space gives back.' },
   { name: 'The Maker', essence: 'Your creativity is the gift', glyph: '🎨', image: 'images/06-maker.png',
-    why: 'You pulled this because the creative part of you has been waiting behind the clinical precision. Your Outer Authority means your best ideas do not arrive in isolation at a desk. They arrive in conversation, in response, in the act of making something and watching what wants to come through.',
-    message: 'Gate 8 in your Cross is the gate of Contribution — the energy of making something that has never existed before and offering it to the collective. The client portal, the artifacts, the way you synthesise twelve disciplines into one conversation — this is Gate 8 working. You are not just a practitioner. You are a maker of frameworks and containers. That creativity is not separate from your clinical work. It is the edge of it.',
-    practice: 'Make one thing today purely in response to what wants to come through. Not for a client, not for content. Just to see what arrives.' },
+    why: 'You pulled this because the part of you that creates has been waiting behind the part of you that delivers. Your best ideas do not arrive when you sit alone with a blank page. They arrive in conversation, in response to what a client says, in the moment of making something and discovering what it wants to become.',
+    message: 'The work you are doing in the world is not only clinical. It is creative. The way you hold a session, the containers you design, the language you find for what has no name yet — these are acts of making. You are not just a practitioner who delivers modalities. You are someone who builds new ways of reaching people. That creative edge is not separate from your clinical credibility. It is what makes you impossible to replicate.',
+    practice: 'Make one thing today purely in response to what wants to come through. Not for a client, not for output. Just to see what arrives.' },
   { name: 'The Threshold', essence: 'You are mid-becoming', glyph: '🚪', image: 'images/07-threshold.png',
-    why: 'This found you because you are in one of those lunar cycles where the old shape has loosened and the new one has not fully arrived. As a Reflector you feel these transitions more completely than any other type. You are not just changing your business. You are changing the field you hold.',
-    message: 'The in-between is not a problem to solve. It is a Reflector moving at the pace of the moon. Every 28 days you get a new read on who you are becoming. Right now you are in the doorway and that is exactly where you need to be. The discomfort is not a sign something is wrong. It is the size of what is changing. Keep walking. What is on the other side has been calling you for longer than you know.',
-    practice: 'Write one sentence about the version of you waiting on the other side of this threshold. Speak about her as if she is already here.' },
+    why: 'This found you mid-change, in that unfamiliar in-between where the old shape has loosened and the new one has not yet fully arrived. You feel transitions more deeply than most. What others move through quickly, you feel in full. The card came to tell you that is not a problem.',
+    message: 'You are in the doorway between who you were and who you are becoming, and it feels strange because it is genuinely new, not because something is wrong. The discomfort is proportional to the size of the change. Keep walking. The version of you on the other side of this has been forming for longer than you know, and she is closer than the feeling of uncertainty suggests.',
+    practice: 'Write one sentence about the version of you on the other side of this threshold. Speak about her as if she is already here.' },
   { name: 'The Rest', essence: 'Stillness is part of the work', glyph: '🌿', image: 'images/08-rest.png',
-    why: 'You drew this because you have been running on a schedule designed for defined centres and your open sacral has been silently draining. Reflectors have no consistent energy source. You amplify and sample the energy around you, and when you stay in that field too long without genuine rest you lose your own reading of yourself.',
-    message: 'Rest is not a reward you earn after enough productivity. For you it is the reset that makes everything else possible. When your energy field is quiet, you can finally feel what is actually yours versus what you have been absorbing from your clients and your environment. The clarity you need is already in you. It surfaces when you stop long enough to hear it.',
+    why: 'You drew this because you have been giving from a well that has not been fully replenished, and part of you is calling for genuine rest rather than just a shorter to-do list. The card came to honour that call.',
+    message: 'You work at depth. What you hold in a session, what you absorb from your clients, what you carry between calls — it has weight. Rest is not a break from the work. For you it is part of the work. When you are genuinely rested, you arrive to each session with something that cannot be manufactured or performed. Your clients feel it. The quality of your presence when you are replenished is the thing they cannot get anywhere else. Protect it.',
     practice: 'Take one period of genuine stillness today with no input. No podcast, no scroll. Just you and the quiet.' },
   { name: 'The Mirror', essence: 'Your people recognize you', glyph: '🪞', image: 'images/09-mirror.png',
-    why: 'This came through because you are literally a mirror by design. Every centre is open, which means you reflect back the energy and patterns of whoever enters your field. Your soulmate client finds you not because you convinced her, but because she looked at what you wrote and felt something she recognised as herself.',
-    message: 'You do not need better marketing. You need cleaner mirrors. When your content and presence are precise enough, the woman who is meant for you sees herself in it before she understands what you do. Your Cross of Contagion amplifies this. She lands in your field and something shifts. Your job is not to convince her. It is to be clear enough that she can find you. Then trust the recognition to do the rest.',
-    practice: 'Write one piece of content that holds a mirror to the exact experience of the woman you are here to serve. Name what she is living so precisely she saves it.' },
+    why: 'This came through because you have been trying to convince instead of simply being clear. The people who are meant for you do not need convincing. They need to recognise you. When the right person lands in what you have written or said, something in her already knows.',
+    message: 'You do not have to explain yourself into relevance. You have to be precise enough that the woman who is ready for this work can see herself in what you offer. When you are that precise — when you name what she is living so exactly that she feels caught — she does not just become a client. She becomes someone who sends you everyone she knows. That recognition is not built by being more. It is built by being exact.',
+    practice: 'Write one piece of content today that holds a mirror to the exact experience of the woman you are here to serve. Name what she is living so precisely she saves it.' },
   { name: 'The Root', essence: 'Build from the ground', glyph: '🌳', image: 'images/10-root.png',
-    why: 'You pulled this because Gate 29 lives in your Cross. Gate 29 is the gate of Perseverance — the capacity to commit deeply and see something through even when the result is not yet visible. The foundation work you are doing right now is Gate 29 in action.',
-    message: 'The website, the brand, the portal, the offer suite, the consultation flow — every piece of this is root work. It is not glamorous and it does not trend, but it is the structure that will hold everything you build on top of it. What you are laying now is not temporary scaffolding. It is the ground. When it is ready, everything that grows from it will hold.',
+    why: 'You pulled this because the unglamorous, foundational work has been testing your patience. The card came to tell you it is the most important thing you are doing right now.',
+    message: 'Before the bloom comes the root. The website, the positioning, the offer structure, the consultation flow — every piece of this foundation is what lets everything you build later actually hold. You are not behind because this is taking time. You are being thorough. The practitioner who rushes the root work spends years rebuilding. You are building once, from the ground, and it will be unshakeable.',
     practice: 'Tend one foundational thing today that you have been skipping past because it felt too slow or too unglamorous.' },
   { name: 'The Flame', essence: 'Let yourself want it', glyph: '🔥', image: 'images/11-flame.png',
-    why: 'This found you because Gate 30 lives in your Cross. Gate 30 is the gate of Recognition of Feelings — the fire of desire and the depth of emotional experience. You feel what you want very clearly. What you sometimes do is decide it is too much or not yet earned. The card came to hand the desire back to you.',
-    message: 'The $10,000 to $20,000 months, the VIP clients who stay for full 20-session arcs, the practice that works without exhausting you — you are allowed to want all of it. Gate 30 does not ask you to be reasonable about what moves you. It asks you to feel it fully and let that feeling be the signal. What you desire is not random. It is information about what you are built to create.',
+    why: 'This found you because there is something you want that you have been keeping small. Not because it is too much to want, but because wanting it out loud feels risky. The card came to give you permission to feel the full size of it.',
+    message: 'You feel desire deeply and you feel it accurately. What you want is not a distraction from the work. It is a signal pointing you toward the life you are here to build. The income, the schedule, the calibre of client, the depth of the work, the freedom — you are allowed to want all of it without apology. The wanting is not arrogance. It is direction. Let the flame stay lit.',
     practice: 'Say out loud the version of your practice that you actually want. Not the modest one. The real one.' },
   { name: 'The Offering', essence: 'Receiving is allowed', glyph: '🤲', image: 'images/12-offering.png',
-    why: 'You drew this because with all centres open you absorb other people’s needs so completely that giving feels natural and receiving feels foreign. You feel what your clients need before they name it. You extend sessions, absorb their pain, and often give more than you have been paid for. The card came to rebalance the flow.',
-    message: 'You cannot sustain a practice that only runs in one direction. Receiving the full fee, the honest testimonial, the referral, the recognition — these are not bonuses. They are part of the exchange that makes the work sustainable. When you receive fully, you are not taking. You are completing the circuit that keeps the field alive.',
+    why: 'You drew this because you give generously and receive carefully. You feel what your clients need before they name it, and that attunement makes you an extraordinary practitioner. It also makes it easy to give more than you take. The card came to rebalance the flow.',
+    message: 'A practice that only runs in one direction will exhaust you. Receiving the full fee, the honest testimonial, the referral, the acknowledgement — these are not extras. They are part of the exchange that makes the work sustainable and the relationship honest. When you receive fully, you are not taking from your clients. You are modelling for them that it is safe to do the same.',
     practice: 'Accept one thing today without minimising it, deflecting it, or immediately giving something back in return.' },
   { name: 'The Unhurried', essence: 'Depth over speed', glyph: '🌊', image: 'images/13-unhurried.png',
-    why: 'This came through because the online space has been moving at Generator speed and you have been trying to keep up. You are not built for that pace. You are built for depth, for the full lunar cycle, for the slow accumulation of trust that turns a community member into a client who stays for twenty sessions.',
-    message: 'Your 2/4 profile means your wealth comes through relationships and referrals, not volume and velocity. One client who completes a full arc with you is worth more than fifty who book once and leave. The right clients arrive because they have been watching you, feeling the field, and when the time is right they reach out. You do not have to go faster. You have to go true.',
+    why: 'This came through because the pace around you has been faster than the pace that is true for you, and you have been trying to close that gap. The card came to release you from the race.',
+    message: 'Your gift is depth, not volume. One client who completes a full arc of work with you is worth more to her, and to you, than many who book once and leave. The right clients for you do not arrive through urgency marketing. They arrive because they have been watching you, feeling what you offer, and when their moment comes they reach out. You do not have to go faster. You have to go true.',
     practice: 'Say no to something fast and shallow today to protect space for something slow and real.' },
   { name: 'The Voice', essence: 'Stop editing yourself', glyph: '🗝', image: 'images/14-voice.png',
-    why: 'You pulled this because your Outer Authority means your clarity comes from speaking out loud and hearing yourself say the thing. When you edit before you speak, you cut off the very process by which your truth arrives. The card came to give you permission to let it out unfiltered.',
-    message: 'The most magnetic version of your content is not the one you rewrote four times. It is the one that came out in one pass because something in you needed to say it. Your 2/4 profile thrives in response to real moments, not content schedules. When something moves you in a session or a conversation, that is the material. Speak it before you shape it. The aliveness has to come first.',
-    practice: 'Voice memo or write one unedited thought that has been sitting in you. Share it before you reconsider.' },
+    why: 'You pulled this because you water yourself down right before you say the thing, certain the full version is too much or too strange or not professional enough. The card came to tell you the unedited version is the one that lands.',
+    message: 'Your clarity does not arrive on the page in isolation. It arrives out loud, in conversation, in the act of speaking and hearing yourself say what you actually think. The content you have smoothed into something safe is the version that gets scrolled past. The content that came out raw, in response to something that moved you, is the version that gets saved and shared. Stop editing yourself before you begin. The aliveness has to come first.',
+    practice: 'Voice memo or write one unedited thought that has been sitting in you. Send or post it before you reconsider.' },
   { name: 'The Tender', essence: 'Be gentle with the scared part', glyph: '🫧', image: 'images/15-tender.png',
-    why: 'This found you because with all centres open you feel everything, including the fear that lives in the people around you. Some of what feels like your own resistance is not yours. It is the collective fear you have been carrying in your open centres. The card came to help you put it down gently and return to what is actually yours.',
-    message: 'The part of you that hesitates is not weak. It is the part that has been absorbing too much without enough time to discharge it. Rest, solitude, and honest conversation with people who know your design — these are how a Reflector maintains her own reading of herself. When you are rested and clear, you know the difference between your fear and the fear you picked up from the room. Be gentle with what is yours. Return the rest.',
-    practice: 'Ask yourself: is this fear mine, or have I absorbed it? Breathe and let what is not yours go.' },
+    why: 'This found you because a part of you has been frightened lately, and the response has been to push harder rather than to slow down and meet it. The card came to suggest a different approach.',
+    message: 'The fear that rises before you are visible, before you charge what you are worth, before you say the thing — it is not your enemy. It is a part of you that learned, at some point, that being big was not safe. You do not have to argue it out of existence. You meet it. Hand on your heart, a breath, an acknowledgement that you hear it. Then you move forward with it alongside you rather than in front of you.',
+    practice: 'Put a hand on your heart and tell the scared part: I hear you, and we are doing it anyway.' },
   { name: 'The Compass', essence: 'Your body already knows', glyph: '🧭', image: 'images/16-compass.png',
-    why: 'You drew this because you have been waiting for mental certainty before you trust yourself to move. But your authority is not mental. It is lunar and bodily. The mind is the last thing to know, not the first. The card came to redirect you back to the compass you were born with.',
-    message: 'Your open ajna means you can hold every perspective simultaneously, which makes you a brilliant thinker but a poor decision-maker from the mind alone. When something feels right in your bones after enough time and honest conversation, that is your authority speaking. When it feels contracted or hollow, even if the logic is sound, that is your authority speaking too. Trust the body. It has been trying to tell you.',
+    why: 'You drew this because you have been waiting for your mind to feel certain before you trust yourself to move. But the certainty you are waiting for is not mental. It is bodily. You know the difference between a decision that feels right in your bones and one that feels logical but hollow. The card came to point you back to that knowing.',
+    message: 'Your body is your most reliable instrument. The quick yes or no that rises before your mind catches up is not impulsiveness. It is intelligence. The contracted feeling in your chest when something is wrong is data. The spaciousness you feel when something is right is data. Stop waiting to think your way to certainty. Feel the answer rise, and trust it. Your body has been doing this work long before you had language for it.',
     practice: 'Notice one place where your mind and your body are saying different things. Today, listen to the body.' },
   { name: 'The Bloom', essence: 'Quiet is not nothing', glyph: '🌸', image: 'images/17-bloom.png',
-    why: 'This came through because you have been showing up and the response has felt quiet, and you have started to wonder if you are reaching anyone. Your Cross of Contagion does not work through volume. It works through field. The right person does not need to see a hundred posts. She needs to land in yours once and feel something she cannot explain.',
-    message: 'Reflectors influence by presence, not by frequency. The quiet after you post is not absence. People are sitting with what you said, forwarding it, saving it and coming back months later when the moment is right for them. You are planting in a field you cannot always see. The bloom is coming. It arrives on its own timeline, and it will be larger than you are currently measuring for.',
+    why: 'This came through because you have been showing up and the response has felt quieter than you hoped, and you have been measuring that quiet as a verdict. The card came to offer a different reading.',
+    message: 'The people who are meant for your work are not always the ones who respond immediately. They are the ones who read what you wrote at midnight and felt something they could not explain. They are the ones who saved it, sent it to a friend, came back to it three months later when they were finally ready. You are planting in a field you cannot always see. The bloom is coming. It arrives on its own timeline, not yours, and it is larger than you are currently measuring for.',
     practice: 'Show up once more today for the one person who needed to hear exactly this.' },
   { name: 'The Sovereign', essence: 'You are the practitioner already', glyph: '👑', image: 'images/18-sovereign.png',
-    why: 'You pulled this because you have 25 years of academic depth, nine years of advanced clinical training, a PhD, and a design that lets you meet a client at every level simultaneously. And some part of you is still waiting for permission to lead. The card came to be clear: there is no more qualified.',
-    message: 'The woman who runs this practice is not a future version of you who has read one more book. She is the one reading this right now. Your Cross of Contagion means you were literally designed to be a point of transmission in this field. Not someday. Now. Make the next decision as that practitioner. Charge the price as her. The auditioning is over.',
+    why: 'You pulled this because some part of you is still auditioning for a role you have already earned. Twenty-five years of depth, nine years of advanced clinical training, a doctoral credential, and a way of working that reaches people at a level most practitioners never access. The card came to end the audition.',
+    message: 'The woman who leads this practice is not a future version of you who has done one more training or waited until the website is perfect. She is the one reading this right now. You already carry the credential. You already have the results. You already know things about how people change that most people in this field will never understand. Make the next decision as her. Charge the price as her. Speak as her. She is not coming. She is here.',
     practice: 'Make one decision today as the fully arrived practitioner you already are. Not the one who is still becoming. The one who is here.' },
   { name: 'The Weaver', essence: 'It all belongs together', glyph: '🕸', image: 'images/19-weaver.png',
-    why: 'This found you because someone has suggested you do too many things. All nine of your centres are open. You were designed to hold and integrate more threads than any defined practitioner can. The variety is not the confusion. It is the gift.',
-    message: 'NLP at the cognitive level. Hypnotherapy at the subconscious. Somatic work at the body. Yoga Nidra at the consciousness level. A PhD in the technology that shapes language and meaning. These are not separate practices. They are one integrated approach that meets a client wherever the pattern actually lives. That is what makes the work reach what nothing else has reached. You are the thread that connects them.',
-    practice: 'Name out loud the thing that every modality you use is ultimately trying to do. That is your real offering.' },
+    why: 'This found you because the many threads of what you do have felt difficult to hold in one coherent story, and someone somewhere along the way made you feel that the variety was a liability. The card came to show you the design.',
+    message: 'Everything you have trained in, every modality you hold, every dimension of your practice — they are not competing offerings from a practitioner who cannot make up her mind. They are one integrated approach that can meet a client at every level she lives in: cognitive, subconscious, somatic, energetic. No single-modality practitioner can do what you do, because what you do requires all of it working at once. The variety is not the problem to solve. It is the signature. Trust the pattern you have been quietly weaving all along.',
+    practice: 'Name out loud the thing that every part of your work is ultimately trying to do. That is your real offer.' },
   { name: 'The Dawn', essence: 'A new thing is beginning', glyph: '🌅', image: 'images/20-dawn.png',
-    why: 'You drew this because something in your practice is genuinely shifting and you can feel it even if you cannot name it yet. Reflectors live by the lunar cycle, and some cycles bring beginnings the mind cannot track but the body recognises immediately. You are in one of those. The step you are hesitating on is the right one.',
-    message: 'The new site, the portal, the repriced offers, the clearer positioning, the in-person expansion — these are not separate updates. They are one new chapter opening. Gate 30 in your Cross means you are wired to feel the significance of a turning point. This is one. Let yourself feel it fully, and then move.',
+    why: 'You drew this because something is genuinely shifting, and you can feel it even if you cannot name it yet. Not just in your business. In you. The card came to mark the turning and tell you that what feels uncertain is not wrong. It is new.',
+    message: 'A new chapter is rising — the website, the positioning, the in-person work, the portals, the clearer offer — and it does not require you to have the whole arc mapped before you begin. It requires you to take the next honest step with the clarity you actually have right now. You feel the significance of this turning, even when you cannot fully explain it. That feeling is not anxiety. It is the recognition of something beginning. Let yourself feel the size of it. Then move.',
     practice: 'Take one action today toward the thing that feels new and alive, even if you cannot fully explain why it matters yet.' }
 ];
 
